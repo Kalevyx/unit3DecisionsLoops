@@ -19,29 +19,24 @@ public class CircleOverlap2
        System.out.print("Input the y-coordinate of the second circle: ");
        double ycenter2 = in.nextDouble();
 
-       double minXCenter;
-       double minYCenter;
-       
-       xcenter1 < xcenter2 ? minXCenter = xcenter1 : minXCenter = xcenter2;
-       
-       
+       double distance = Math.pow((xcenter1-xcenter2)*(xcenter1-xcenter2)+(ycenter1-ycenter2)*(ycenter1-ycenter2),.5);
        
        // Your work goes here
-       if(radius1+radius2<40)
+       if (radius2 >= radius1 && distance <= (radius2 - radius1))
        {
-           System.out.println("Disjoint");
+               System.out.println("Circle 1 is inside Circle 2.");
        }
-       else if((radius1+xcenter1>=radius2+xcenter2)||(radius1+ycenter1>=radius2+ycenter2))
+       else if (radius1 >= radius2 && distance <= (radius1 - radius2))
        {
-            System.out.println("Mutually contained");
+               System.out.println("Circle 2 is inside Circle 1.");
        }
-       else if(radius1+radius2==40)
+       else if (distance > (radius1 + radius2))
        {
-           System.out.println("Tangent");
+           System.out.println("Circle 2 does not overlap Circle 1.");
        }
        else
        {
-           System.out.println("Overlapping");
+           System.out.println("Circle 2 overlaps Circle 1.");
        }
     }
 }
