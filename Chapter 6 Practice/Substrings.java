@@ -7,5 +7,35 @@ public class Substrings
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter a word: ");
         String word = scan.next();
+        
+        int length = word.length();
+        
+        for ( int i = 0;
+            i < length;
+            i ++)
+        {
+            System.out.println(word.charAt(i));
+        }
+        
+        for ( int i = 0;
+            i < length;
+            i ++)
+        {
+            if ( i != length - 1)
+            {
+                System.out.println(word.substring(i));
+                         
+            }
+        }
+    
+        for ( int i = 0;
+            i < length;
+            i ++)  
+        {
+            if ( i < length - 1&& i != 0)
+            {
+                System.out.println(word.substring(0, length - i));
+            }
+        }
     }
 }
