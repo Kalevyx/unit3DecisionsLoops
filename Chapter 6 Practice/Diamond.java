@@ -12,25 +12,39 @@ public class Diamond
             i<2*integer;
             i++)
         {
-            if(i<integer+1)
+            if(i>integer)
             {
-                
+                for(int a = 1;
+                    a<=i-integer;
+                    a++)
+                {
+                    System.out.print(" ");
+                }
+            
+                for(int b = 1;
+                    b<=(2*integer-1)-((i-integer)*2);
+                    b++)
+                {
+                    System.out.print("*");
+                }
             }
             
-            for(int a = 1;
-                a<=integer-i;
-                a++)
+            else
             {
-                System.out.print(" ");
-            }
+                for(int a = 1;
+                    a<=integer-i;
+                    a++)
+                    {
+                        System.out.print(" ");
+                    }
             
-            for(int b = 1;
-                b<2*i;
-                b++)
-            {
-                System.out.print("*");
-            }
-            
+                for(int b = 1;
+                    b<2*i;
+                    b++)
+                    {
+                        System.out.print("*");
+                    }
+                }
             System.out.println("");
         }
     }
