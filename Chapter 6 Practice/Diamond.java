@@ -34,17 +34,18 @@ public class Diamond
                 for(int a = 1;
                     a<=integer-i;
                     a++)
-                    {
-                        System.out.print(" ");
-                    }
+                {
+                    System.out.print(" ");
+                }
             
                 for(int b = 1;
                     b<2*i;
                     b++)
-                    {
-                        System.out.print("*");
-                    }
+                {
+                    System.out.print("*");
                 }
+            }
+            
             System.out.println("");
         }
     }

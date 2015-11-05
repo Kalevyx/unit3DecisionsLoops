@@ -15,32 +15,28 @@ public class MontyHall
             i<1000;
             i++)
         {
-            door = generator.nextInt(4)+1;
-            rightDoor = generator.nextInt(4)+1;
-            hostDoor = generator.nextInt(4)+1;
+            door = generator.nextInt(3)+1;
+            rightDoor = generator.nextInt(3)+1;
+            hostDoor = generator.nextInt(3)+1;
             
             while(hostDoor==door&&hostDoor!=rightDoor)
             {
-                hostDoor = generator.nextInt(4)+1;
+                hostDoor = generator.nextInt(3)+1;
             }
             
-            if(hostDoor!=2&&hostDoor!=3)
+            int originalDoor=door;
+            
+            while(door!=hostDoor&&door!=originalDoor)
             {
-                door=1;
-            }
-            else if(hostDoor!=1&&hostDoor!=3)
-            {
-                door=2;
-            }
-            else
-            {
-                door=3;
+                door=generator.nextInt(3)+1;
             }
             
-            if(door==rightDoor)
+            if(door!=rightDoor)
             {
-                count+=1
+                count+=1;
             }
         }
+        
+        System.out.println(count);
     }
 }

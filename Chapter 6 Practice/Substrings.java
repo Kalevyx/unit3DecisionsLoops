@@ -8,7 +8,7 @@ public class Substrings
         System.out.print("Enter a word: ");
         String word = scan.next();
         
-        int length = word.length();
+        /*int length = word.length();
         
         for ( int i = 0;
             i < length;
@@ -35,6 +35,18 @@ public class Substrings
             if ( i < length - 1&& i != 0)
             {
                 System.out.println(word.substring(0, length - i));
+            }
+        }*/        
+        
+        for(int length=1;
+            length<=word.length();
+            length++)
+        {
+            for(int pos = 0;
+                pos<=word.length()-length;
+                pos++)
+            {
+                System.out.println(word.substring(pos,pos+length));
             }
         }
     }
