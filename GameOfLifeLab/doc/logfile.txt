@@ -1,12 +1,18 @@
-Project documentation
+Class documentation
 <---- javadoc command: ---->
-C:\Program Files (x86)\Java\jdk1.8.0_60\bin\javadoc.exe
--sourcepath
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab
+C:\Program Files (x86)\BlueJ\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
 -source
 1.8
 -classpath
-C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-service.jar;D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GridWorld\gridworld.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-service.jar;D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab
 -d
 D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc
 -encoding
@@ -17,71 +23,24 @@ UTF-8
 C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
 -doclet
 bluej.doclet.doclets.formats.html.HtmlDoclet
--doctitle
-GameOfLifeLab
--windowtitle
-GameOfLifeLab
--author
--version
--nodeprecated
--package
--link
-http://download.oracle.com/javase/8/docs/api/
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab/GameOfLifeTest.java
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab/GameOfLife.java
+D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java
 <---- end of javadoc command ---->
-Loading source file D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLifeTest.java...
 Loading source file D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java...
 Constructing Javadoc information...
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLifeTest.java:5: error: package info.gridworld.actor does not exist
-import info.gridworld.actor.Actor;
-                           ^
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:1: error: package info.gridworld.actor does not exist
-import info.gridworld.actor.Actor;
-                           ^
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:2: error: package info.gridworld.actor does not exist
-import info.gridworld.actor.ActorWorld;
-                           ^
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:3: error: package info.gridworld.actor does not exist
-import info.gridworld.actor.Rock;
-                           ^
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:4: error: package info.gridworld.grid does not exist
-import info.gridworld.grid.Grid;
-                          ^
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:5: error: package info.gridworld.grid does not exist
-import info.gridworld.grid.BoundedGrid;
-                          ^
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:6: error: package info.gridworld.grid does not exist
-import info.gridworld.grid.Location;
-                          ^
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:19: error: cannot find symbol
-    private ActorWorld world;
-            ^
-  symbol:   class ActorWorld
-  location: class GameOfLife
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:133: error: cannot find symbol
-    public Actor getActor(int row, int col)
-           ^
-  symbol:   class Actor
-  location: class GameOfLife
-javadoc: warning - Error fetching URL: http://download.oracle.com/javase/8/docs/api/package-list
-Standard Doclet version 1.8.0_60
+Standard Doclet version 1.8.0_40
 Building tree for all the packages and classes...
 Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\GameOfLife.html...
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:31: warning - @post is an unknown tag.
-D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:133: warning - @pre is an unknown tag.
-Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\GameOfLifeTest.html...
+D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:32: warning - @post is an unknown tag.
+D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:112: warning - @pre is an unknown tag.
+D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:112: warning - @post is an unknown tag.
+D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\GameOfLife.java:181: warning - @pre is an unknown tag.
 Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\package-frame.html...
 Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\package-summary.html...
-Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\package-tree.html...
 Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\constant-values.html...
 Building index for all the packages and classes...
-Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\overview-tree.html...
-Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\index-all.html...
 Building index for all classes...
 Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\allclasses-frame.html...
 Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\allclasses-noframe.html...
 Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\index.html...
-Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\help-doc.html...
 Generating D:\Naperville North High School\Sophomore - 2015-2016\AP Computer Science\First Semester\JavaDocs\GameOfLifeLab\doc\stylesheet.css...
-12 warnings
+4 warnings
